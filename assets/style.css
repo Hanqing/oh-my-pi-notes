@@ -1,0 +1,83 @@
+:root {
+  --theme-color: #315c4f;
+  --theme-color-soft: #e8f0ed;
+  --ink: #20332d;
+  --muted: #66736f;
+}
+
+body {
+  color: var(--ink);
+}
+
+.app-name-link {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.markdown-section {
+  max-width: 920px;
+  padding: 36px 48px 80px;
+}
+
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3 {
+  color: #18352c;
+  letter-spacing: -0.02em;
+}
+
+.markdown-section h2 {
+  border-bottom: 1px solid #e3e9e6;
+  padding-bottom: 0.35em;
+}
+
+.markdown-section blockquote {
+  border-left-color: var(--theme-color);
+  background: var(--theme-color-soft);
+  color: #40544d;
+  padding: 0.8em 1.1em;
+}
+
+.markdown-section table {
+  display: table;
+  width: 100%;
+}
+
+.markdown-section code {
+  border-radius: 4px;
+}
+
+.markdown-section .mermaid {
+  overflow-x: auto;
+  margin: 1.8rem auto;
+  padding: 1rem;
+  border: 1px solid #e3e9e6;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+.sidebar {
+  color: var(--muted);
+}
+
+.sidebar-nav > ul > li > strong {
+  color: #294c41;
+}
+
+.cover-main > p:last-child a:last-child {
+  border-color: var(--theme-color);
+  background: var(--theme-color);
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .markdown-section {
+    padding: 24px 20px 60px;
+  }
+
+  .markdown-section table {
+    display: block;
+    overflow-x: auto;
+  }
+}
